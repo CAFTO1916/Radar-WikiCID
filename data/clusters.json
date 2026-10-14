@@ -1,0 +1,130 @@
+{
+  "catalog_version": "exercise-1.0",
+  "catalog_type": "reduced_synthetic_catalog",
+  "clusters": [
+    {
+      "cluster_id": "CL-001",
+      "name": "Inteligencia artificial y automatización",
+      "description": "Soluciones que utilizan modelos de IA para predecir, recomendar, clasificar o automatizar decisiones y tareas.",
+      "keywords": [
+        "inteligencia artificial",
+        "machine learning",
+        "predictive analytics",
+        "computer vision",
+        "forecasting",
+        "automatización inteligente"
+      ],
+      "examples": [
+        "pronóstico de demanda",
+        "programación inteligente de personal",
+        "visión computacional para tiendas"
+      ],
+      "exclusions": [
+        "simulación de infraestructura sin una decisión automatizada",
+        "gemelos digitales cuyo propósito principal sea modelar sistemas físicos"
+      ]
+    },
+    {
+      "cluster_id": "CL-002",
+      "name": "Experiencia omnicanal y lealtad",
+      "description": "Capacidades que unifican identidad, interacción, beneficios y experiencia del cliente entre canales físicos y digitales.",
+      "keywords": [
+        "omnichannel",
+        "omnicanal",
+        "loyalty",
+        "lealtad",
+        "rewards",
+        "recompensas",
+        "customer engagement"
+      ],
+      "examples": [
+        "programas de puntos",
+        "identidad de cliente entre canales",
+        "personalización de beneficios"
+      ],
+      "exclusions": [
+        "cambios de imagen corporativa sin capacidad digital"
+      ]
+    },
+    {
+      "cluster_id": "CL-003",
+      "name": "Operaciones de retail y cadena de suministro",
+      "description": "Tecnologías para optimizar inventarios, tiendas, personal, distribución, entregas y abastecimiento.",
+      "keywords": [
+        "retail operations",
+        "inventory",
+        "inventario",
+        "workforce",
+        "turnos",
+        "last mile",
+        "última milla",
+        "replenishment"
+      ],
+      "examples": [
+        "optimización de turnos",
+        "detección de anaqueles vacíos",
+        "predicción de retrasos logísticos"
+      ],
+      "exclusions": []
+    },
+    {
+      "cluster_id": "CL-004",
+      "name": "Pagos, identidad digital y prevención de fraude",
+      "description": "Soluciones para pagos, autenticación, verificación de identidad y reducción de fraude en canales digitales o físicos.",
+      "keywords": [
+        "payments",
+        "pagos",
+        "identity verification",
+        "verificación de identidad",
+        "fraud",
+        "fraude",
+        "authentication"
+      ],
+      "examples": [
+        "alta digital de cuentas",
+        "autenticación conductual",
+        "prevención de fraude transaccional"
+      ],
+      "exclusions": []
+    },
+    {
+      "cluster_id": "CL-005",
+      "name": "Cloud, edge y observabilidad",
+      "description": "Infraestructura y herramientas para operar, monitorear y diagnosticar aplicaciones y servicios distribuidos.",
+      "keywords": [
+        "cloud",
+        "edge",
+        "observability",
+        "observabilidad",
+        "latency",
+        "latencia",
+        "monitoring"
+      ],
+      "examples": [
+        "monitoreo de aplicaciones en edge",
+        "correlación de métricas de servicio",
+        "diagnóstico de infraestructura distribuida"
+      ],
+      "exclusions": [
+        "gemelos digitales utilizados principalmente para simulación de escenarios"
+      ]
+    }
+  ],
+  "classification_policy": {
+    "preferred_order": [
+      "deterministic_rules",
+      "lexical_or_semantic_retrieval",
+      "llm_assisted_classification",
+      "human_review"
+    ],
+    "allow_multiple_clusters": true,
+    "require_reason_and_evidence": true,
+    "low_confidence_action": "human_review"
+  },
+  "new_cluster_policy": {
+    "minimum_distinct_companies": 2,
+    "minimum_independent_events": 2,
+    "automatic_creation_allowed": false,
+    "required_action": "propose_for_human_review"
+  }
+}

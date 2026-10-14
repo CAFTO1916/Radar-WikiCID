@@ -1,0 +1,113 @@
+{
+  "catalog_version": "exercise-1.0",
+  "catalog_type": "reduced_synthetic_catalog",
+  "companies": [
+    {
+      "company_id": "CMP-001",
+      "canonical_name": "Asteria Systems",
+      "aliases": [
+        "Asteria",
+        "Asteria AI"
+      ],
+      "website_domain": "asteria.example.org",
+      "country": "United States",
+      "description": "Software de inteligencia artificial para operaciones de tiendas y planificación de personal.",
+      "existing_clusters": [
+        "CL-001",
+        "CL-003"
+      ],
+      "verification_status": "verified"
+    },
+    {
+      "company_id": "CMP-002",
+      "canonical_name": "NovaLoyalty",
+      "aliases": [
+        "Nova Loyalty",
+        "Nova Rewards"
+      ],
+      "website_domain": "novaloyalty.example.org",
+      "country": "Mexico",
+      "description": "Plataforma omnicanal de lealtad, recompensas e identificación de clientes.",
+      "existing_clusters": [
+        "CL-002"
+      ],
+      "verification_status": "verified"
+    },
+    {
+      "company_id": "CMP-003",
+      "canonical_name": "QuantaShield",
+      "aliases": [
+        "Quanta Shield",
+        "QS Identity"
+      ],
+      "website_domain": "quantashield.example.org",
+      "country": "United Kingdom",
+      "description": "Verificación de identidad conductual y prevención de fraude para servicios financieros.",
+      "existing_clusters": [
+        "CL-004"
+      ],
+      "verification_status": "verified"
+    },
+    {
+      "company_id": "CMP-004",
+      "canonical_name": "EdgeMesh Labs",
+      "aliases": [
+        "EdgeMesh",
+        "Edge Mesh Labs"
+      ],
+      "website_domain": "edgemesh.example.org",
+      "country": "Canada",
+      "description": "Observabilidad y monitoreo de aplicaciones desplegadas en infraestructura edge.",
+      "existing_clusters": [
+        "CL-005"
+      ],
+      "verification_status": "verified"
+    },
+    {
+      "company_id": "CMP-005",
+      "canonical_name": "Atlas Analytics",
+      "aliases": [
+        "Atlas"
+      ],
+      "website_domain": "atlasanalytics.example.org",
+      "country": "United States",
+      "description": "Analítica de riesgo y desempeño para instituciones financieras.",
+      "existing_clusters": [
+        "CL-001",
+        "CL-004"
+      ],
+      "verification_status": "verified",
+      "identity_warning": "El alias Atlas es ambiguo y no debe utilizarse como coincidencia suficiente sin evidencia adicional."
+    },
+    {
+      "company_id": "CMP-006",
+      "canonical_name": "FlowPay Technologies",
+      "aliases": [
+        "FlowPay",
+        "Flow Pay"
+      ],
+      "website_domain": "flowpay.example.org",
+      "country": "Brazil",
+      "description": "Infraestructura de pagos y conciliación para comercios digitales.",
+      "existing_clusters": [
+        "CL-004"
+      ],
+      "verification_status": "verified",
+      "identity_warning": "Una mención aislada a FlowPay requiere corroboración mediante dominio, país, producto o fuente oficial."
+    }
+  ],
+  "matching_policy": {
+    "strong_identifiers": [
+      "website_domain",
+      "verified_company_id",
+      "official_legal_name"
+    ],
+    "weak_identifiers": [
+      "name_only",
+      "alias_only",
+      "description_similarity"
+    ],
+    "ambiguous_match_action": "human_review",
+    "automatic_merge_allowed": false
+  }
+}

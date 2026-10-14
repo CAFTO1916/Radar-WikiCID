@@ -1,0 +1,128 @@
+{
+  "dataset_id": "wikicid-mini-radar-2026-01",
+  "dataset_type": "synthetic",
+  "as_of_date": "2026-10-10",
+  "notice": "Todas las empresas, medios, contenidos y URLs de este archivo son ficticios y fueron creados exclusivamente para el ejercicio de selección.",
+  "articles": [
+    {
+      "article_id": "ART-001",
+      "title": "Asteria Systems despliega programación inteligente de turnos en 120 tiendas",
+      "content": "Asteria Systems anunció que la cadena minorista Mercado Norte implementó su plataforma de inteligencia artificial para pronosticar demanda, asignar turnos y reducir horas extra. El despliegue cubre 120 tiendas en México y, de acuerdo con la empresa usuaria, la primera etapa redujo 11% el tiempo dedicado a elaborar horarios. La herramienta se conecta con los sistemas de punto de venta y recursos humanos.",
+      "source": "Retail Digital Hoy",
+      "source_type": "specialized_media",
+      "url": "https://retaildigital.example.org/asteria-turnos-mercado-norte",
+      "published_at": "2026-10-02T09:15:00-06:00",
+      "language": "es"
+    },
+    {
+      "article_id": "ART-002",
+      "title": "Mercado Norte adopts Asteria AI scheduling across 120 stores",
+      "content": "Retailer Mercado Norte has rolled out Asteria Systems' workforce scheduling product across 120 locations. The system forecasts store demand and recommends staffing levels. Mercado Norte said the initial deployment shortened planning time and reduced overtime. This report refers to the rollout announced on October 2 and does not describe a separate deployment.",
+      "source": "Commerce Technology Review",
+      "source_type": "specialized_media",
+      "url": "https://commerce-tech.example.org/news/mercado-norte-asteria-rollout",
+      "published_at": "2026-10-03T14:00:00Z",
+      "language": "en"
+    },
+    {
+      "article_id": "ART-003",
+      "title": "Asteria Systems despliega programación inteligente de turnos en 120 tiendas",
+      "content": "Asteria Systems anunció que Mercado Norte implementó su plataforma para pronosticar demanda y asignar turnos en 120 tiendas. La nota reproduce el anuncio publicado previamente.",
+      "source": "Retail Digital Hoy",
+      "source_type": "specialized_media",
+      "url": "https://retaildigital.example.org/asteria-turnos-mercado-norte",
+      "published_at": "2026-10-02T09:15:00-06:00",
+      "language": "es"
+    },
+    {
+      "article_id": "ART-004",
+      "title": "Mercado Norte presenta los nuevos colores de su uniforme corporativo",
+      "content": "La cadena Mercado Norte renovará gradualmente los colores y materiales de los uniformes utilizados por su personal. El anuncio forma parte de una actualización de identidad visual y no incluye nuevas capacidades digitales, cambios operativos ni adopción tecnológica.",
+      "source": "Actualidad Comercial",
+      "source_type": "general_media",
+      "url": "https://actualidadcomercial.example.org/mercado-norte-uniformes",
+      "published_at": "2026-10-04T11:30:00-06:00",
+      "language": "es"
+    },
+    {
+      "article_id": "ART-005",
+      "title": "Nova Rewards conecta beneficios de tienda, aplicación y comercio electrónico",
+      "content": "Nova Rewards, nombre comercial utilizado por NovaLoyalty, lanzó con Tiendas Horizonte un programa de recompensas que reconoce al mismo cliente en sucursales, aplicación móvil y comercio electrónico. Los puntos pueden utilizarse en cualquiera de los tres canales. Tiendas Horizonte confirmó que el piloto operará durante seis meses y medirá frecuencia de compra y retención.",
+      "source": "Experiencia Cliente LATAM",
+      "source_type": "specialized_media",
+      "url": "https://cxlatam.example.org/nova-rewards-horizonte",
+      "published_at": "2026-09-28T08:00:00-06:00",
+      "language": "es"
+    },
+    {
+      "article_id": "ART-006",
+      "title": "Asteria launches computer-vision shelf monitoring product",
+      "content": "Asteria Systems introduced ShelfSight, a computer-vision product that detects empty shelves and misplaced items from existing store cameras. A three-store pilot with retailer Central Market reported faster replenishment alerts. ShelfSight is a different product and customer deployment from Asteria's workforce scheduling rollout.",
+      "source": "Asteria Systems Newsroom",
+      "source_type": "company_official",
+      "url": "https://asteria.example.org/news/shelfsight-launch",
+      "published_at": "2026-10-06T16:00:00Z",
+      "language": "en"
+    },
+    {
+      "article_id": "ART-007",
+      "title": "Atlas prueba predicción de entregas para operadores logísticos",
+      "content": "Una empresa identificada únicamente como Atlas inició en Monterrey una prueba de analítica predictiva para anticipar retrasos de última milla. La publicación no proporciona sitio web, razón social, nombres de fundadores ni información suficiente para confirmar si se trata de Atlas Analytics u otra empresa con el mismo nombre.",
+      "source": "Boletín Logístico Regional",
+      "source_type": "regional_media",
+      "url": "https://logisticaregional.example.org/atlas-prediccion-entregas",
+      "published_at": "2026-10-05T10:10:00-06:00",
+      "language": "es"
+    },
+    {
+      "article_id": "ART-008",
+      "title": "HelixGrid pilots autonomous network digital twins with a mobile operator",
+      "content": "HelixGrid completed a pilot of an autonomous network digital twin that simulates traffic growth, equipment failures and capacity changes before modifications are applied to a live mobile network. The unnamed operator said the pilot was used to compare three investment scenarios. HelixGrid is not included in the provided company catalog.",
+      "source": "Network Futures Journal",
+      "source_type": "specialized_media",
+      "url": "https://networkfutures.example.org/helixgrid-digital-twin-pilot",
+      "published_at": "2026-09-25T13:00:00Z",
+      "language": "en"
+    },
+    {
+      "article_id": "ART-009",
+      "title": "SynapseFabric lanza gemelo digital para planear centros de datos",
+      "content": "SynapseFabric presentó una plataforma de gemelos digitales para simular consumo eléctrico, enfriamiento y utilización de capacidad en centros de datos. La empresa informó que InfraCloud probará el producto en dos instalaciones. El anuncio corresponde a un producto y empresa diferentes al piloto de HelixGrid, aunque ambos utilizan simulación operacional mediante gemelos digitales.",
+      "source": "Infraestructura Digital",
+      "source_type": "specialized_media",
+      "url": "https://infradigital.example.org/synapsefabric-gemelo-centros-datos",
+      "published_at": "2026-10-01T07:45:00-06:00",
+      "language": "es"
+    },
+    {
+      "article_id": "ART-010",
+      "title": "Banco Delta expands Quanta Shield identity checks after fraud pilot",
+      "content": "Banco Delta expanded Quanta Shield's behavioral identity verification service to its mobile account-opening process after a six-month pilot. The bank reported fewer manual reviews and a reduction in attempted identity fraud, although it did not disclose absolute transaction volumes. Quanta Shield is an alias used by QuantaShield.",
+      "source": "Financial Systems Monitor",
+      "source_type": "specialized_media",
+      "url": "https://finmonitor.example.org/banco-delta-quantashield-expansion",
+      "published_at": "2026-10-07T12:00:00Z",
+      "language": "en"
+    },
+    {
+      "article_id": "ART-011",
+      "title": "EdgeMesh Labs adds service-level observability for edge applications",
+      "content": "EdgeMesh Labs released a monitoring module that correlates application latency, connectivity and infrastructure health across distributed edge locations. A regional telecommunications operator is testing the module in 18 sites, but neither commercial terms nor production adoption have been confirmed.",
+      "source": "Cloud Operations Weekly",
+      "source_type": "specialized_media",
+      "url": "https://cloudops.example.org/edgemesh-service-observability",
+      "published_at": "2026-10-08T15:20:00Z",
+      "language": "en"
+    },
+    {
+      "article_id": "ART-012",
+      "title": "FlowPay podría lanzar pagos invisibles para tiendas físicas",
+      "content": "Una publicación sin autor afirma que FlowPay prepara una solución de pagos invisibles para tiendas físicas utilizando reconocimiento de clientes. No incluye declaración de la empresa, cliente confirmado, fecha de lanzamiento ni enlace a evidencia primaria. El nombre podría corresponder a FlowPay Technologies, pero la identidad no puede verificarse con la información disponible.",
+      "source": "Documento reenviado sin fuente verificable",
+      "source_type": "unverified",
+      "url": null,
+      "published_at": "2026-10-09T18:00:00-06:00",
+      "language": "es"
+    }
+  ]
+}

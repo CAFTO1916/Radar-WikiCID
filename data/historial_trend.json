@@ -1,0 +1,329 @@
+{
+  "dataset_id": "wikicid-trend-history-2026-01",
+  "dataset_type": "synthetic",
+  "as_of_date": "2026-10-10",
+  "trend_threshold": 70,
+  "score_range": {
+    "minimum": 0,
+    "maximum": 100
+  },
+  "dimensions": [
+    {
+      "dimension": "velocity",
+      "label": "Velocidad",
+      "weight": 0.25,
+      "calculation_mode": "automatic",
+      "window_days": 30,
+      "scoring_rule": {
+        "0_events": 0,
+        "1_event": 25,
+        "2_events": 50,
+        "3_events": 75,
+        "4_or_more_events": 100
+      }
+    },
+    {
+      "dimension": "materiality",
+      "label": "Materialidad",
+      "weight": 0.25,
+      "calculation_mode": "human_input",
+      "allowed_values": [
+        0,
+        25,
+        50,
+        75,
+        100
+      ]
+    },
+    {
+      "dimension": "evidence_independence",
+      "label": "Independencia de evidencia",
+      "weight": 0.15,
+      "calculation_mode": "automatic",
+      "window_days": 90,
+      "scoring_rule": {
+        "0_independent_sources": 0,
+        "1_independent_source": 25,
+        "2_independent_sources": 50,
+        "3_independent_sources": 75,
+        "4_or_more_independent_sources": 100
+      },
+      "note": "Dos artículos que reproducen el mismo evento pueden aportar evidencia, pero no deben contarse como eventos independientes."
+    },
+    {
+      "dimension": "proven_adoption",
+      "label": "Adopción comprobada",
+      "weight": 0.15,
+      "calculation_mode": "human_input",
+      "allowed_values": [
+        0,
+        25,
+        50,
+        75,
+        100
+      ]
+    },
+    {
+      "dimension": "persistence",
+      "label": "Persistencia",
+      "weight": 0.1,
+      "calculation_mode": "automatic",
+      "window_weeks": 8,
+      "scoring_rule": "active_weeks_in_window / 8 * 100"
+    },
+    {
+      "dimension": "reach",
+      "label": "Alcance",
+      "weight": 0.1,
+      "calculation_mode": "automatic",
+      "window_days": 180,
+      "scoring_rule": {
+        "0_sectors": 0,
+        "1_sector": 25,
+        "2_sectors": 50,
+        "3_sectors": 75,
+        "4_or_more_sectors": 100
+      }
+    }
+  ],
+  "companies": [
+    {
+      "company_ref": "CMP-001",
+      "canonical_name": "Asteria Systems",
+      "human_inputs": {
+        "materiality": null,
+        "proven_adoption": null
+      },
+      "historical_events": [
+        {
+          "event_id": "EV-AST-001",
+          "date": "2026-08-18",
+          "week": "2026-W34",
+          "source_id": "SRC-101",
+          "source_type": "specialized_media",
+          "independent_source": true,
+          "sector": "Retail",
+          "summary": "Piloto de pronóstico de demanda en tiendas."
+        },
+        {
+          "event_id": "EV-AST-002",
+          "date": "2026-09-01",
+          "week": "2026-W36",
+          "source_id": "SRC-102",
+          "source_type": "customer_official",
+          "independent_source": true,
+          "sector": "Retail",
+          "summary": "Cliente confirma adopción de planificación laboral."
+        },
+        {
+          "event_id": "EV-AST-003",
+          "date": "2026-09-15",
+          "week": "2026-W38",
+          "source_id": "SRC-103",
+          "source_type": "specialized_media",
+          "independent_source": true,
+          "sector": "Logistics",
+          "summary": "Asteria prueba predicción de demanda en centros de distribución."
+        },
+        {
+          "event_id": "EV-AST-004",
+          "date": "2026-09-23",
+          "week": "2026-W39",
+          "source_id": "SRC-104",
+          "source_type": "company_official",
+          "independent_source": false,
+          "sector": "Retail",
+          "summary": "Actualización de producto para operaciones de tienda."
+        },
+        {
+          "event_id": "EV-AST-005",
+          "date": "2026-10-02",
+          "week": "2026-W40",
+          "source_id": "SRC-105",
+          "source_type": "specialized_media",
+          "independent_source": true,
+          "sector": "Retail",
+          "summary": "Despliegue de programación de turnos en 120 tiendas."
+        },
+        {
+          "event_id": "EV-AST-006",
+          "date": "2026-10-06",
+          "week": "2026-W41",
+          "source_id": "SRC-106",
+          "source_type": "company_official",
+          "independent_source": false,
+          "sector": "Retail",
+          "summary": "Lanzamiento de ShelfSight para monitoreo de anaqueles."
+        }
+      ]
+    },
+    {
+      "company_ref": "CMP-002",
+      "canonical_name": "NovaLoyalty",
+      "human_inputs": {
+        "materiality": null,
+        "proven_adoption": null
+      },
+      "historical_events": [
+        {
+          "event_id": "EV-NOV-001",
+          "date": "2026-07-14",
+          "week": "2026-W29",
+          "source_id": "SRC-201",
+          "source_type": "company_official",
+          "independent_source": false,
+          "sector": "Retail",
+          "summary": "NovaLoyalty anuncia nueva versión de su plataforma."
+        },
+        {
+          "event_id": "EV-NOV-002",
+          "date": "2026-09-28",
+          "week": "2026-W40",
+          "source_id": "SRC-202",
+          "source_type": "specialized_media",
+          "independent_source": true,
+          "sector": "Retail",
+          "summary": "Piloto omnicanal con Tiendas Horizonte."
+        }
+      ]
+    },
+    {
+      "company_ref": "CMP-003",
+      "canonical_name": "QuantaShield",
+      "human_inputs": {
+        "materiality": null,
+        "proven_adoption": null
+      },
+      "historical_events": [
+        {
+          "event_id": "EV-QS-001",
+          "date": "2026-08-25",
+          "week": "2026-W35",
+          "source_id": "SRC-301",
+          "source_type": "customer_official",
+          "independent_source": true,
+          "sector": "Banking",
+          "summary": "Banco regional confirma piloto de identidad conductual."
+        },
+        {
+          "event_id": "EV-QS-002",
+          "date": "2026-09-08",
+          "week": "2026-W37",
+          "source_id": "SRC-302",
+          "source_type": "specialized_media",
+          "independent_source": true,
+          "sector": "Insurance",
+          "summary": "Aseguradora adopta verificación de identidad."
+        },
+        {
+          "event_id": "EV-QS-003",
+          "date": "2026-09-22",
+          "week": "2026-W39",
+          "source_id": "SRC-303",
+          "source_type": "regulatory_filing",
+          "independent_source": true,
+          "sector": "Banking",
+          "summary": "Documento regulatorio menciona expansión del servicio."
+        },
+        {
+          "event_id": "EV-QS-004",
+          "date": "2026-10-01",
+          "week": "2026-W40",
+          "source_id": "SRC-304",
+          "source_type": "specialized_media",
+          "independent_source": true,
+          "sector": "Ecommerce",
+          "summary": "Marketplace prueba autenticación conductual."
+        },
+        {
+          "event_id": "EV-QS-005",
+          "date": "2026-10-07",
+          "week": "2026-W41",
+          "source_id": "SRC-305",
+          "source_type": "specialized_media",
+          "independent_source": true,
+          "sector": "Banking",
+          "summary": "Banco Delta amplía el uso de QuantaShield."
+        }
+      ]
+    },
+    {
+      "company_ref": "CMP-004",
+      "canonical_name": "EdgeMesh Labs",
+      "human_inputs": {
+        "materiality": null,
+        "proven_adoption": null
+      },
+      "historical_events": [
+        {
+          "event_id": "EV-EDGE-001",
+          "date": "2026-08-03",
+          "week": "2026-W32",
+          "source_id": "SRC-401",
+          "source_type": "company_official",
+          "independent_source": false,
+          "sector": "Telecommunications",
+          "summary": "Actualización de agente de monitoreo edge."
+        },
+        {
+          "event_id": "EV-EDGE-002",
+          "date": "2026-10-08",
+          "week": "2026-W41",
+          "source_id": "SRC-402",
+          "source_type": "specialized_media",
+          "independent_source": true,
+          "sector": "Telecommunications",
+          "summary": "Prueba de observabilidad en 18 sitios."
+        }
+      ]
+    },
+    {
+      "company_ref": "NEW-HELIXGRID",
+      "canonical_name": "HelixGrid",
+      "human_inputs": {
+        "materiality": null,
+        "proven_adoption": null
+      },
+      "historical_events": [
+        {
+          "event_id": "EV-HG-001",
+          "date": "2026-09-25",
+          "week": "2026-W39",
+          "source_id": "SRC-501",
+          "source_type": "specialized_media",
+          "independent_source": true,
+          "sector": "Telecommunications",
+          "summary": "Piloto de gemelo digital para una red móvil."
+        }
+      ]
+    },
+    {
+      "company_ref": "NEW-SYNAPSEFABRIC",
+      "canonical_name": "SynapseFabric",
+      "human_inputs": {
+        "materiality": null,
+        "proven_adoption": null
+      },
+      "historical_events": [
+        {
+          "event_id": "EV-SF-001",
+          "date": "2026-10-01",
+          "week": "2026-W40",
+          "source_id": "SRC-601",
+          "source_type": "specialized_media",
+          "independent_source": true,
+          "sector": "Data Centers",
+          "summary": "Lanzamiento de gemelo digital para centros de datos."
+        }
+      ]
+    }
+  ],
+  "calculation_requirements": {
+    "count_unique_events_not_articles": true,
+    "deduplicate_republished_event_coverage": true,
+    "show_dimension_breakdown": true,
+    "show_formula_and_evidence": true,
+    "allow_trend_decision_with_missing_human_inputs": false,
+    "missing_human_input_status": "pending_human_review"
+  }
+}

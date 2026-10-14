@@ -1,0 +1,10 @@
+# Ignorar credenciales y variables de entorno
+.env
+
+# Ignorar archivos cacheados de Python
+__pycache__/
+*.pyc
+
+# Ignorar entornos virtuales (si llegas a usar uno)
+venv/
+env/
